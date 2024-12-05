@@ -3,8 +3,6 @@ const cnx = require("./data")
 const router = express.Router()
 const controller = require("./app.controller")
 
-router.get("/addPlayer", (res, req)=>{
-    
-})
-
+router.post("/player", controller.addPlayer)
+router.get("/player",controller.getAllPlayer)
 module.exports = router
